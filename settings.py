@@ -12,7 +12,7 @@ class Settings:
     # 是否开启DEBUG模式
     DEBUG = config('DEBUG', cast=bool, default=False)
     # 端口
-    PORT = config('PORT', cast=int, default=12345)
+    PORT = config('PORT', cast=int, default=80)
     # Sqlite数据库文件
     DATABASE_FILE = config('DATABASE_FILE', cast=str, default='data/database.db')
     # Sqlite套接字
@@ -42,7 +42,7 @@ class Settings:
     # 管理密码
     ADMIN_PASSWORD = config('ADMIN_PASSWORD', cast=str, default=uuid.uuid4().hex)
     # 文件大小限制，默认10MB
-    FILE_SIZE_LIMIT = config('FILE_SIZE_LIMIT', cast=int, default=10) * 1024 * 1024
+    FILE_SIZE_LIMIT = config('FILE_SIZE_LIMIT', cast=int, default=5120) * 1024 * 1024
     # 网站标题
     TITLE = config('TITLE', cast=str, default="文件快递柜")
     # 网站描述
