@@ -38,9 +38,9 @@ class Settings:
     # 删除过期文件的间隔（分钟）
     DELETE_EXPIRE_FILES_INTERVAL = config('DELETE_EXPIRE_FILES_INTERVAL', cast=int, default=10)
     # 管理地址
-    ADMIN_ADDRESS = config('ADMIN_ADDRESS', cast=str, default=uuid.uuid4().hex)
+    ADMIN_ADDRESS = config('ADMIN_ADDRESS', cast=str, default='Journey')
     # 管理密码
-    ADMIN_PASSWORD = config('ADMIN_PASSWORD', cast=str, default=uuid.uuid4().hex)
+    ADMIN_PASSWORD = config('ADMIN_PASSWORD', cast=str, default='123456')
     # 文件大小限制，默认10MB
     FILE_SIZE_LIMIT = config('FILE_SIZE_LIMIT', cast=int, default=5120) * 1024 * 1024
     # 网站标题
