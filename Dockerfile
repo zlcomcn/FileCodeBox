@@ -7,5 +7,5 @@ LABEL version="6"
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-EXPOSE 12345
+EXPOSE 80
 CMD ["python","main.py"]
